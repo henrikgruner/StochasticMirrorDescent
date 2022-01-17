@@ -1,8 +1,9 @@
 # StochasticMirrorDescent
 Implementation of Stochastic Mirror Descent with q norm as potential as optimization method in PyTorch. The goal was to reproduce the results of [1]. The implementation of [2] is used for ResNet-18 to use on CIFAR, as Pytorch's module is designed for ImageNet with a more aggressive downsampling.
 
-The method: 
+## The method: 
 Mirror descent is a gradient based optimization algortihm. It works by using a strictly convex differentiable function as a mirror map. The update rule is as follows
+
 ![title](images_git/update_rule.svg)
 
 Where the function psi transforms the input before the gradient step is taken. Let the mirror map be:
@@ -19,7 +20,7 @@ To apply the method to a neural network with weights denoted as w, we can insert
 
 
 
-To run use:
+## To run 
 
 ```
 python3 main [-q] [-lr] [-init] [-create_init] [-ngpu]
@@ -41,6 +42,10 @@ python3 main [-q] [-lr] [-init] [-create_init] [-ngpu]
 
 This will create four directories with an initialization of the weights of ResNet18 each, and train one network with the given parameters. 
 
+## Bregman Divergences
+BD.py calculates the bregman divergences with the given potential psi defined earlier
+
+![title](images_git/Bregman.svg)
 <ol>
 <li>Navid Azizan and Babak Hassibi.Stochastic Gradient/Mirror Descent: Min-imax Optimality and Implicit Regularization. 2019. arXiv:1806.00952 [cs.LG].
   
