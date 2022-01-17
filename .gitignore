@@ -4,3 +4,4 @@ iteration*.txt
 __pycache__/
 data_loader.pyc
 /MNIST
+/CIFAR10
