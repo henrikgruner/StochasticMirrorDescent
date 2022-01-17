@@ -1,9 +1,10 @@
 # StochasticMirrorDescent
-Implementation of Stochastic Mirror Descent with q norm as potential as optimization method in PyTorch. The goal was to reproduce the results of [1]. The implementation of [2] is used for ResNet-18 to use on CIFAR, as Pytorch's module is designed for ImageNet with a more aggressive downsampling. 
+Implementation of Stochastic Mirror Descent with q norm as potential as optimization method in PyTorch. The goal was to reproduce the results of [1]. The implementation of [2] is used for ResNet-18 to use on CIFAR, as Pytorch's module is designed for ImageNet with a more aggressive downsampling.
 
+To run use:
 
 ```
-python main [-q] [-lr] [-init] [-create_init] [-ngpu]
+python3 main [-q] [-lr] [-init] [-create_init] [-ngpu]
 ```
 <ul>
 <li>Argument - Description - Default value
@@ -20,6 +21,7 @@ python main [-q] [-lr] [-init] [-create_init] [-ngpu]
 
 </ul>
 
+This will create four directories with an initialization of the weights of ResNet18 each, and train one network with the given parameters. 
 
 <ol>
 <li>Navid Azizan and Babak Hassibi.Stochastic Gradient/Mirror Descent: Min-imax Optimality and Implicit Regularization. 2019. arXiv:1806.00952 [cs.LG].
