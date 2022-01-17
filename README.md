@@ -46,6 +46,11 @@ This will create four directories with an initialization of the weights of ResNe
 BD.py calculates the bregman divergences with the given potential psi defined earlier
 
 ![title](images_git/Bregman.svg)
+
+## Distribution of the weights
+histo2.py will caculate histograms for all the final trained weights and initialization for a given initialization (n in the script)
+
+## References
 <ol>
 <li>Navid Azizan and Babak Hassibi.Stochastic Gradient/Mirror Descent: Min-imax Optimality and Implicit Regularization. 2019. arXiv:1806.00952 [cs.LG].
   
