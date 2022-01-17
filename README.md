@@ -10,9 +10,11 @@ Where the function psi transforms the input before the gradient step is taken. L
 ![title](images_git/potential.svg)
 
 It can then be shown that:
+
 ![title](images_git/both_psi.svg)
 
 To apply the method to a neural network with weights denoted as w, we can insert and find the update rule
+
 ![title](images_git/update_eq.svg)
 
 
